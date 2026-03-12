@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Official Privacy Policy and Terms of Use for mobile games published on Google Play." />
+  <title>Privacy Policy & Terms of Use</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --surface-2: #f9fbff;
+      --text: #172033;
+      --muted: #5f6b85;
+      --line: #e6ecf5;
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --accent: #0f766e;
+      --shadow: 0 24px 60px rgba(18, 36, 74, 0.08);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.10), transparent 26%),
+        radial-gradient(circle at top right, rgba(15, 118, 110, 0.08), transparent 24%),
+        linear-gradient(180deg, #f6f9fd 0%, #edf3fb 100%);
+      line-height: 1.72;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(12px);
+      background: rgba(244, 247, 251, 0.86);
+      border-bottom: 1px solid rgba(230, 236, 245, 0.9);
+    }
+
+    .header-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      font-size: 1.02rem;
+      letter-spacing: 0.2px;
+      color: var(--text);
+    }
+
+    .logo-badge {
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      box-shadow: 0 12px 24px rgba(37, 99, 235, 0.18);
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .logo-badge::after {
+      content: "";
+      position: absolute;
+      inset: 10px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.92);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      padding: 10px 16px;
+      border-radius: 999px;
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.94rem;
+      transition: 0.2s ease;
+    }
+
+    .nav a:hover {
+      background: #eaf1fe;
+      text-decoration: none;
+      color: var(--primary-dark);
+    }
+
+    .hero {
+      padding: 64px 0 28px;
+    }
+
+    .hero-wrap {
+      display: grid;
+      grid-template-columns: 1.25fr 0.75fr;
+      gap: 26px;
+      align-items: stretch;
+    }
+
+    .hero-main,
+    .hero-side,
+    .panel,
+    .contact-card,
+    .footer-card {
+      background: rgba(255,255,255,0.88);
+      border: 1px solid rgba(230, 236, 245, 0.95);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-main {
+      padding: 42px;
+      background: linear-gradient(135deg, rgba(255,255,255,0.95), rgba(246,250,255,0.96));
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-main::before {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      right: -80px;
+      top: -80px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(37,99,235,0.12), transparent 68%);
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #edf4ff;
+      border: 1px solid #d9e7ff;
+      color: var(--primary-dark);
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.3rem, 4vw, 4rem);
+      line-height: 1.04;
+      letter-spacing: -0.03em;
+      max-width: 760px;
+      margin-bottom: 16px;
+    }
+
+    .hero-main p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      max-width: 760px;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .meta-item {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 16px 18px;
+    }
+
+    .meta-item span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.86rem;
+      margin-bottom: 4px;
+    }
+
+    .meta-item strong {
+      font-size: 0.98rem;
+    }
+
+    .hero-side {
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+      background: linear-gradient(180deg, #ffffff 0%, #f7fbff 100%);
+    }
+
+    .side-label {
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .side-title {
+      font-size: 1.4rem;
+      line-height: 1.2;
+      margin-top: 8px;
+      margin-bottom: 10px;
+    }
+
+    .side-text {
+      color: var(--muted);
+      font-size: 0.97rem;
+    }
+
+    .checklist {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .checklist li {
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: #f8fbff;
+      border: 1px solid #e3edf9;
+      color: var(--text);
+      font-size: 0.94rem;
+      font-weight: 600;
+    }
+
+    .main-grid {
+      display: grid;
+      grid-template-columns: 280px minmax(0, 1fr);
+      gap: 26px;
+      padding: 10px 0 70px;
+      align-items: start;
+    }
+
+    .toc {
+      position: sticky;
+      top: 102px;
+      padding: 22px;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .toc h2 {
+      font-size: 1rem;
+      margin-bottom: 14px;
+    }
+
+    .toc nav {
+      display: grid;
+      gap: 8px;
+    }
+
+    .toc a {
+      padding: 10px 12px;
+      border-radius: 12px;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+
+    .toc a:hover {
+      background: #eef4ff;
+      color: var(--primary-dark);
+      text-decoration: none;
+    }
+
+    .content-stack {
+      display: grid;
+      gap: 22px;
+    }
+
+    .panel {
+      padding: 34px;
+    }
+
+    .panel-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .panel-title {
+      font-size: 1.8rem;
+      line-height: 1.15;
+    }
+
+    .panel-tag {
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #eef8f6;
+      color: var(--accent);
+      font-size: 0.84rem;
+      font-weight: 800;
+      border: 1px solid #d7f0eb;
+    }
+
+    .lead {
+      color: var(--muted);
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    .section {
+      padding: 22px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .section:first-of-type {
+      border-top: none;
+      padding-top: 8px;
+    }
+
+    .section h3 {
+      font-size: 1.08rem;
+      margin-bottom: 10px;
+    }
+
+    .section p,
+    .section li {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .section ul {
+      padding-left: 20px;
+      margin-top: 10px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .contact-card {
+      margin-top: 22px;
+      padding: 26px;
+      background: linear-gradient(135deg, #ffffff, #f8fbff);
+    }
+
+    .contact-card h2 {
+      font-size: 1.28rem;
+      margin-bottom: 8px;
+    }
+
+    .contact-card p {
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      padding-bottom: 44px;
+    }
+
+    .footer-card {
+      padding: 22px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.94rem;
+    }
+
+    .note {
+      margin-top: 10px;
+      font-size: 0.88rem;
+      color: #7a869d;
+    }
+
+    @media (max-width: 1024px) {
+      .hero-wrap,
+      .main-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .toc {
+        position: static;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(calc(100% - 18px), var(--max));
+      }
+
+      .header-inner {
+        padding: 14px 0;
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .logo {
+        justify-content: center;
+      }
+
+      .nav {
+        justify-content: center;
+      }
+
+      .hero {
+        padding-top: 34px;
+      }
+
+      .hero-main,
+      .panel,
+      .hero-side,
+      .contact-card,
+      .footer-card,
+      .toc {
+        padding: 22px;
+        border-radius: 22px;
+      }
+
+      .meta-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">
+        <div class="logo-badge"></div>
+        <span>SHOOFI SHOPPING LTD</span>
+      </div>
+      <nav class="nav">
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms of Use</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-wrap">
+        <div class="hero-main">
+          <div class="hero-kicker">Google Play Ready Legal Page</div>
+          <h1>Privacy Policy and Terms for Mobile Games</h1>
+          <p>
+            This page is designed for mobile games published on Google Play. It includes a professional English Privacy Policy and Terms of Use for simple games that do not collect user data and do not include advertising or tracking systems.
+          </p>
+
+          <div class="meta-grid">
+            <div class="meta-item">
+              <span>Publisher</span>
+              <strong>SHOOFI SHOPPING LTD</strong>
+            </div>
+            <div class="meta-item">
+              <span>Effective Date</span>
+              <strong>March 12, 2026</strong>
+            </div>
+            <div class="meta-item">
+              <span>Contact Email</span>
+              <strong>dochdakel@gmail.com</strong>
+            </div>
+            <div class="meta-item">
+              <span>Platform</span>
+              <strong>Google Play / Android Games</strong>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+
+    <section class="container main-grid">
+      <aside class="toc">
+        <h2>Quick Navigation</h2>
+        <nav>
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#privacy-info">Information We Collect</a>
+          <a href="#privacy-third">Platform Services</a>
+          <a href="#privacy-children">Children</a>
+          <a href="#terms">Terms of Use</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </aside>
+
+      <div class="content-stack">
+        <article class="panel" id="privacy">
+          <div class="panel-header">
+            <h2 class="panel-title">Privacy Policy</h2>
+            <span class="panel-tag">Google Play Games</span>
+          </div>
+          <p class="lead">
+            This Privacy Policy explains how <strong>SHOOFI SHOPPING LTD</strong> (“we,” “our,” or “us”) handles information in connection with our mobile games published on Google Play.
+          </p>
+
+          <section class="section">
+            <h3>1. No Personal Data Collection</h3>
+            <p>
+              Our games do <strong>not collect, store, or process personal information</strong> from users. We do not request personal details such as names, email addresses, phone numbers, or account information.
+            </p>
+            <p>
+              Users can download and play our games without creating an account or submitting personal information.
+            </p>
+          </section>
+
+          <section class="section" id="privacy-info">
+            <h3>2. Information We Do Not Collect</h3>
+            <p>
+              Our games are designed to operate without collecting personal user data. Specifically, we do not collect:
+            </p>
+            <ul>
+              <li>Names, email addresses, or contact details</li>
+              <li>User accounts or login credentials</li>
+              <li>Location information</li>
+              <li>Photos, contacts, or personal files</li>
+              <li>Messages or personal communications</li>
+            </ul>
+          </section>
+
+          <section class="section" id="privacy-third">
+            <h3>3. Third‑Party Services</h3>
+            <p>
+              Our games do not include advertising networks, analytics SDKs, or tracking services. The only external platform involved is Google Play itself, which distributes the game through the Google Play Store.
+            </p>
+            <p>
+              Users may review the Google Play privacy policies if they wish to understand how the platform itself handles information on their device.
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>4. Children's Privacy</h3>
+            <p>
+              Our games do not knowingly collect personal information from children. Because our games do not collect personal data, there is no storage or processing of children's personal information by us.
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>5. Security</h3>
+            <p>
+              Since our games do not collect or store personal information, we do not maintain databases containing personal user data.
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>6. Changes to This Privacy Policy</h3>
+            <p>
+              We may update this Privacy Policy from time to time. When changes are made, the updated version will be published on this page with a revised effective date.
+            </p>
+          </section>
+
+          <section class="section" id="contact">
+            <h3>7. Contact</h3>
+            <p>
+              If you have questions regarding this Privacy Policy, you may contact us at:
+            </p>
+            <p>
+              <strong>Email:</strong> <a href="mailto:dochdakel@gmail.com">dochdakel@gmail.com</a><br>
+              <strong>Developer:</strong> SHOOFI SHOPPING LTD
+            </p>
+          </section>
+        </article>
+
+        <article class="panel" id="terms">
+          <div class="panel-header">
+            <h2 class="panel-title">Terms of Use</h2>
+            <span class="panel-tag">Game Services</span>
+          </div>
+          <p class="lead">
+            These Terms of Use govern access to and use of our mobile games, websites, and related services.
+          </p>
+
+          <section class="section">
+            <h3>1. Acceptance of Terms</h3>
+            <p>
+              By downloading, installing, accessing, or using the Services, you agree to be bound by these Terms. If you do not agree, you must not use the Services.
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>2. Eligibility</h3>
+            <p>
+              You may use the Services only if you are legally permitted to do so under the laws applicable to you. If you are under the age required to form a binding agreement in your jurisdiction, you should use the Services only with the involvement of a parent or legal guardian where required.
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>3. Limited License</h3>
+            <p>
+              Subject to these Terms, we grant you a limited, personal, non-exclusive, non-transferable, revocable license to use the Services for your own non-commercial entertainment purposes.
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>4. Prohibited Conduct</h3>
+            <ul>
+              <li>Using the Services in violation of applicable law or platform rules.</li>
+              <li>Cheating, exploiting bugs, reverse engineering, or attempting unauthorized access.</li>
+              <li>Interfering with game balance, servers, advertising flows, or security features.</li>
+              <li>Using bots, scripts, automation, or manipulative methods unless expressly permitted by us.</li>
+              <li>Infringing intellectual property or other rights belonging to us or third parties.</li>
+            </ul>
+          </section>
+
+          <section class="section">
+            <h3>5. Virtual Items and In-App Purchases</h3>
+            <p>
+              If a game offers virtual items, currencies, boosts, subscriptions, or other in-app content, such items are licensed, not sold, unless applicable law states otherwise. Availability, pricing, and functionality may change at any time. Refund requests are generally subject to the policies of the platform through which the purchase was made.
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>6. Intellectual Property</h3>
+            <p>
+              The Services, including all games, code, artwork, names, logos, text, graphics, audio, video, designs, and related content, are owned by or licensed to us and are protected by applicable intellectual property laws. Except as expressly permitted, you may not reproduce, distribute, modify, publicly display, or create derivative works from any part of the Services.
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>7. Service Availability</h3>
+            <p>
+              We may modify, suspend, discontinue, or update any part of the Services at any time, with or without notice. We do not guarantee continuous availability, uninterrupted access, or error-free operation.
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>8. Disclaimer</h3>
+            <p>
+              To the maximum extent permitted by law, the Services are provided on an “AS IS” and “AS AVAILABLE” basis without warranties of any kind, whether express, implied, or statutory.
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>9. Limitation of Liability</h3>
+            <p>
+              To the maximum extent permitted by law, we shall not be liable for indirect, incidental, consequential, special, exemplary, or punitive damages, or for any loss of data, profits, goodwill, or business interruption arising out of or related to the use of the Services.
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>10. Termination</h3>
+            <p>
+              We may suspend or terminate access to the Services if we reasonably believe you have violated these Terms, created legal risk, or harmed users, partners, or the integrity of the Services.
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>11. Governing Law</h3>
+            <p>
+              These Terms shall be governed by the laws of <strong>[Insert Country / State]</strong>, without regard to conflict of law rules. Any disputes arising from or relating to these Terms shall be subject to the exclusive jurisdiction of the competent courts located in <strong>[Insert Venue]</strong>, unless mandatory law provides otherwise.
+            </p>
+          </section>
+
+          <section class="section">
+            <h3>12. Changes to the Terms</h3>
+            <p>
+              We may revise these Terms from time to time. The current version will be posted on this page with an updated effective date.
+            </p>
+          </section>
+        </article>
+
+        <section class="contact-card" id="contact">
+          <h2>Contact</h2>
+          <p>
+            If you have any questions about this Privacy Policy or these Terms of Use, you may contact us at:
+          </p>
+          <p>
+            <strong>Email:</strong> <a href="mailto:dochdakel@gmail.com">dochdakel@gmail.com</a><br>
+            <strong>Developer / Studio:</strong> SHOOFI SHOPPING LTD
+          </p>
+          <div class="note">
+            Before publishing, replace all placeholders in brackets and make sure the policy accurately matches your actual data collection, advertising, analytics, SDK, and billing practices.
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="container footer">
+      <div class="footer-card">
+        © <span id="year"></span> SHOOFI SHOPPING LTD. All rights reserved.
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
+
