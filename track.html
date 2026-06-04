@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Track Your Order — LumiGlow</title>
+<style>
+  :root{--red:#e23744;--red-dark:#c01f2c;--ink:#1a1a1a;--gray:#555;--light:#f6f6f6;--border:#e5e5e5}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:"Segoe UI",Arial,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+  a{color:var(--red);text-decoration:none}
+  header{border-bottom:1px solid var(--border);padding:16px 0}
+  .wrap{max-width:620px;margin:0 auto;padding:0 18px}
+  .logo{font-size:24px;font-weight:800;letter-spacing:1px}
+  .logo span{color:var(--red)}
+  main{padding:50px 0 80px;text-align:center}
+  h1{font-size:30px;font-weight:800;margin-bottom:8px}
+  .sub{color:var(--gray);margin-bottom:28px}
+  .box{background:var(--light);border:1px solid var(--border);border-radius:14px;padding:26px}
+  label{display:block;text-align:left;font-weight:700;font-size:14px;margin-bottom:6px}
+  input{width:100%;padding:14px 16px;font-size:16px;border:1px solid var(--border);border-radius:8px;margin-bottom:16px}
+  input:focus{outline:none;border-color:var(--red)}
+  .btn{width:100%;background:var(--red);color:#fff;font-weight:700;border:none;padding:15px;border-radius:8px;font-size:17px;cursor:pointer}
+  .btn:hover{background:var(--red-dark)}
+  .hint{font-size:13px;color:var(--gray);margin-top:16px}
+  .steps{text-align:left;margin:34px auto 0;max-width:520px}
+  .steps h2{font-size:18px;margin-bottom:10px}
+  .steps li{margin:6px 0 6px 18px;font-size:15px;color:#333}
+  .back{display:inline-block;margin-bottom:22px;font-weight:700}
+  footer{border-top:1px solid var(--border);padding:22px 0;color:var(--gray);font-size:13px;text-align:center}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap" style="max-width:1100px;display:flex;justify-content:space-between;align-items:center">
+    <a href="index.html" class="logo">Lumi<span>Glow</span></a>
+    <a href="index.html" style="font-weight:600">← Store</a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Track Your Order 📦</h1>
+    <p class="sub">Enter the tracking number from your shipping confirmation email to see where your package is.</p>
+
+    <div class="box">
+      <label for="num">Tracking number</label>
+      <input id="num" type="text" placeholder="e.g. LP00123456789CN" autocomplete="off">
+      <button class="btn" onclick="track()">Track my package</button>
+      <div class="hint">Powered by 17TRACK — works with 1,900+ carriers worldwide (auto-detects the carrier).</div>
+    </div>
+
+    <div class="steps">
+      <h2>How it works</h2>
+      <ol>
+        <li>After your order ships, we email you a <strong>tracking number</strong>.</li>
+        <li>Paste that number in the box above and click <strong>Track my package</strong>.</li>
+        <li>You'll see the latest status and location of your shipment.</li>
+      </ol>
+      <p class="hint">Haven't received a tracking number yet? Orders ship within 1–2 business days. If it's been longer, email us at <a href="mailto:darkongames123@gmail.com">darkongames123@gmail.com</a>.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 LumiGlow • <a href="index.html">Home</a> • <a href="privacy.html">Policies</a></div>
+</footer>
+
+<script>
+  function track(){
+    var n=document.getElementById('num').value.trim();
+    if(!n){ alert('Please enter your tracking number.'); return; }
+    // Open the universal 17TRACK results page with the number pre-filled
+    window.open('https://t.17track.net/en#nums='+encodeURIComponent(n),'_blank');
+  }
+  // allow Enter key to submit
+  document.getElementById('num').addEventListener('keydown',function(e){ if(e.key==='Enter') track(); });
+</script>
+</body>
+</html>
